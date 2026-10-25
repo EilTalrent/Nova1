@@ -1,0 +1,10 @@
+apu/target/
+window/target/
+roms/*/build/
+sdk/rts/adalib/*
+!sdk/rts/adalib/.keep
+apu/tests/isa/*.elf
+apu/tests/isa/*.n1
+apu/tests/isa/host_isatest
+apu/tests/isa/*.txt
+*.gif

@@ -1,0 +1,16 @@
+[package]
+name = "nova1-window"
+version = "0.1.0"
+edition = "2021"
+description = "NOVA-1 in a real window with keyboard input"
+
+[[bin]]
+name = "nova1-window"
+path = "main.rs"
+
+[dependencies]
+nova1 = { path = "../apu" }
+minifb = "0.27"
+
+[profile.release]
+opt-level = 3

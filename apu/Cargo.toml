@@ -1,0 +1,19 @@
+[package]
+name = "nova1"
+version = "0.1.0"
+edition = "2021"
+description = "NOVA-1: an emulator for a fantasy console APU (RV32IM CPU + PRISM tile/sprite GPU)"
+
+[lib]
+name = "nova1"
+path = "src/lib.rs"
+
+[[bin]]
+name = "nova1"
+path = "src/main.rs"
+
+[dependencies]
+# none: the core emulator is dependency-free. See ../window for the windowed frontend.
+
+[profile.release]
+opt-level = 3
